@@ -1,4 +1,7 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import SectionHeading from "../../components/SectionHeading";
+import styles from "./weProvide.module.css";
 
 const data = [
   {
@@ -33,7 +36,30 @@ const data = [
   },
 ];
 function WeProvide() {
-  return <>WeProvide</>;
+  return (
+    <>
+      <Container>
+        <div className="section_start">
+          <SectionHeading
+            heading={"React JS Development Services"}
+            subheading={"We Provide"}
+          />
+          <Row>
+            {data.map((item) => (
+              <Col sm={6} md={6} lg={6}>
+                <div className={styles.weProvide__reasons} key={item?.id}>
+                  <h3 className={`title__collection title${item?.id}`}>
+                    {item?.title}
+                  </h3>
+                  <p className={styles.description}>{item?.desc}</p>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </div>
+      </Container>
+    </>
+  );
 }
 
 export default WeProvide;

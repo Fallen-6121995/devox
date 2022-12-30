@@ -2,10 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
-
+.section_start{
+  padding: 120px 0;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -14,6 +15,47 @@ a {
 * {
   box-sizing: border-box;
 }
+.title__collection{
+  font-size: 25px;
+  line-height: 37px;
+  padding-bottom: 8px;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+}
+.title1{
+  background-image: linear-gradient(180deg, #fd3939 0%, #c93131 100%);
+ 
+}
+.title2{
+  background-image: linear-gradient(180deg, #ffdf11 2.95%, #ffba0c 84.7%);
+}
+.title3{
+  background-image: linear-gradient(180deg, #fd8439 0%, #f87244 100%);
+}
+.title4{
+  background-image: linear-gradient(180deg, #70fc5c 0%, #519c43 100%);
+}
+.title5{
+  background-image: linear-gradient(180deg, #39abfd 0%, #3391d5 100%);
+}
+.title6{
+  background-image: linear-gradient(180deg, #ff3e87 2.95%, #dd3386 84.7%);
+}
+.num__1{
+  color: #823df7;;
+}
+.num__2{
+  color: #dd3386;
+}
+.num__3{
+  color: #f87244;
+}
+.num__4{
+  color: #519c43;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {

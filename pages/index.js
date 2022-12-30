@@ -7,6 +7,10 @@ import styles from "../styles/Home.module.css";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Link from "next/link";
+import WeProvide from "../Sections/We Provide/WeProvide";
+import Benefits from "../Sections/Benefits/Benefits";
+import Testimonials from "../Sections/Testimonials/Testimonials";
+import DevPorocess from "../Sections/DevProcess/DevProcess";
 
 export default function Home() {
   const [key, setKey] = useState("home");
@@ -57,7 +61,22 @@ export default function Home() {
             </div>
           </Container>
         </div>
-        <div>{/* We Provide section */}</div>
+        {/* We Provide section */}
+        <div>
+          <WeProvide />
+        </div>
+        {/* Benefits section */}
+        <div>
+          <Benefits />
+        </div>
+        {/* Testimonials section */}
+        <div>
+          <Testimonials />
+        </div>
+        {/* Dev section */}
+        <div>
+          <DevPorocess />
+        </div>
       </div>
     </div>
   );

@@ -5,10 +5,13 @@ import Footer from "../components/Footer/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
-      <Navbar />
-      <Component {...pageProps} />
-    </div>
+    <>
+      <div>
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
+    </>
   );
 }
 
